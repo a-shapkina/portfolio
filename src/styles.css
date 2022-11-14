@@ -1,12 +1,15 @@
 :root {
   --branding-color: #ef2530;
   --secondary-color: #f4f4f4;
+  --third-color: #ab0000;
+  --fourth-color: #151515;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
+  color: #333;
 }
 
 h1,
@@ -19,14 +22,20 @@ h3 {
 h1 {
   font-size: 96px;
   line-height: 1.5;
+  color: var(--fourth-color);
 }
 
 h2 {
   font-size: 64px;
 }
 
-h4 {
+h3 {
+  color: var(--fourth-color);
   font-size: 48px;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -45,7 +54,7 @@ p {
 .hero p {
   font-size: 36px;
   font-weight: bold;
-  color: #272142;
+  color: var(--fourth-color);
 }
 
 .hero h2 {
@@ -53,7 +62,7 @@ p {
   font-size: 24px;
   font-weight: normal;
   line-height: 1.5;
-  color: #272142;
+  color: var(--fourth-color);
 }
 
 .content-container {
@@ -94,8 +103,15 @@ p {
   padding: 15px 30px;
 }
 
+.btn-branding:focus,
+.btn-branding:hover {
+  background-color: var(--third-color) !important;
+  color: #fff !important;
+  transition: all 100ms ease-in-out !important;
+}
+
 .btn-branding-outline {
-  color: var(--branding-color);
+  color: #333;
   border: 1px solid var(--branding-color);
   border-radius: 4px;
   font-size: 18px;
@@ -104,8 +120,14 @@ p {
   padding: 15px 30px;
 }
 
+.btn-branding-outline:focus,
+.btn-branding-outline:hover {
+  color: var(--third-color) !important;
+  transition: all 100ms ease-in-out !important;
+}
+
 .project-description {
-  padding: 120px 60px;
+  padding: 0px 50px 100px;
 }
 
 .logo {
@@ -129,7 +151,7 @@ nav li {
 }
 
 nav a {
-  color: #272142;
+  color: #000;
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
@@ -141,6 +163,16 @@ nav a:hover {
 
 footer {
   margin: 60px 0;
+  color: #111;
+}
+
+footer a {
+  color: var(--third-color);
+}
+
+footer a:focus,
+footer a:hover {
+  color: #333;
 }
 
 footer .contact-box {
@@ -155,7 +187,7 @@ footer .contact-box p {
 
 footer .email-link {
   text-decoration: none;
-  color: #000;
+  color: #111;
   font-size: 24px;
   text-align: center;
 }
@@ -170,7 +202,7 @@ footer .social-links a {
   border-radius: 50%;
   font-size: 18px;
   margin: 0 20px;
-  padding: 10px 14px;
+  padding: 7px 14px;
 }
 
 footer .social-links a:hover {
@@ -184,6 +216,10 @@ footer .social-links a:hover {
     font-size: 44px;
     line-height: 56px;
     line-height: 42px;
+  }
+
+  h2 {
+    font-size: 44px;
   }
 
   h3 {
