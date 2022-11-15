@@ -1,15 +1,16 @@
 :root {
   --branding-color: #ef2530;
-  --secondary-color: #f4f4f4;
-  --third-color: #ab0000;
-  --fourth-color: #151515;
+  --secondary-color: #ab0000;
+  --headings-color: #151515;
+  --body-color: #333;
+  --background-color: #f4f4f4;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
+  color: var(--body-color);
   font-family: var(--default-font-family);
-  color: #333;
 }
 
 h1,
@@ -20,9 +21,9 @@ h3 {
 }
 
 h1 {
+  color: var(--headings-color);
   font-size: 96px;
   line-height: 1.5;
-  color: var(--fourth-color);
 }
 
 h2 {
@@ -30,7 +31,7 @@ h2 {
 }
 
 h3 {
-  color: var(--fourth-color);
+  color: var(--headings-color);
   font-size: 48px;
 }
 
@@ -45,28 +46,28 @@ p {
 }
 
 .hero {
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   text-align: center;
-  margin: 0;
-  padding: 80px 20px;
+  padding: 160px 20px;
 }
 
 .hero p {
+  color: var(--headings-color);
   font-size: 36px;
   font-weight: bold;
-  color: var(--fourth-color);
+  margin: 0;
 }
 
 .hero h2 {
+  color: var(--headings-color);
   font-family: var(--default-font-family);
   font-size: 24px;
   font-weight: normal;
   line-height: 1.5;
-  color: var(--fourth-color);
 }
 
 .content-container {
-  padding: 60px 20px;
+  padding: 160px 20px;
 }
 
 .content {
@@ -79,14 +80,14 @@ p {
 }
 
 .content h2 {
-  font-size: 18px;
-  line-height: 1.5;
   font-family: var(--default-font-family);
+  font-size: 18px;
 }
 
 .content h3 {
-  font-size: 24px;
   font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .content p {
@@ -98,40 +99,34 @@ p {
   border-radius: 4px;
   color: white;
   font-size: 18px;
-  font-weight: 500;
   line-height: 27px;
   padding: 15px 30px;
 }
 
 .btn-branding:focus,
 .btn-branding:hover {
-  background-color: var(--third-color) !important;
+  background-color: var(--secondary-color) !important;
   color: #fff !important;
   transition: all 100ms ease-in-out !important;
 }
 
 .btn-branding-outline {
-  color: var(--third-color);
-  border: 1px solid #333;
+  color: var(--secondary-color);
+  border: 1px solid var(--body-color);
   border-radius: 4px;
   font-size: 18px;
-  font-weight: 500;
   line-height: 27px;
   padding: 15px 30px;
 }
 
 .btn-branding-outline:focus,
 .btn-branding-outline:hover {
-  color: #333 !important;
+  color: var(--body-color) !important;
   transition: all 100ms ease-in-out !important;
 }
 
 .project-description {
-  padding: 0px 50px 100px;
-}
-
-.logo {
-  max-width: 150px;
+  padding: 0px 60px 120px;
 }
 
 nav {
@@ -162,21 +157,21 @@ nav a:hover {
 }
 
 footer {
-  margin: 60px 0;
   color: #111;
+  margin: 60px 0;
 }
 
 footer a {
-  color: var(--third-color);
+  color: var(--secondary-color);
 }
 
 footer a:focus,
 footer a:hover {
-  color: #333;
+  color: var(--body-color);
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
+  background: var(--background-color);
   padding: 30px 120px;
   border-radius: 10px;
 }
@@ -186,10 +181,9 @@ footer .contact-box p {
 }
 
 footer .email-link {
-  text-decoration: none;
   color: #111;
   font-size: 24px;
-  text-align: center;
+  text-decoration: none;
 }
 
 footer .email-link:hover {
@@ -197,17 +191,18 @@ footer .email-link:hover {
 }
 
 footer .social-links a {
+  background: var(--background-color);
   color: var(--branding-color);
-  background: var(--secondary-color);
   border-radius: 50%;
   font-size: 18px;
   margin: 0 20px;
   padding: 7px 14px;
+  transition: all 100ms ease-in-out;
 }
 
 footer .social-links a:hover {
-  color: white;
   background: var(--branding-color);
+  color: white;
   transition: all 100ms ease-in-out;
 }
 
@@ -237,9 +232,5 @@ footer .social-links a:hover {
   .project-description {
     padding: 0;
     text-align: center;
-  }
-
-  footer .email-link {
-    font-size: 16px;
   }
 }
