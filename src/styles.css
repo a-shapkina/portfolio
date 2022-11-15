@@ -111,8 +111,8 @@ p {
 }
 
 .btn-branding-outline {
-  color: #333;
-  border: 1px solid var(--branding-color);
+  color: var(--third-color);
+  border: 1px solid #333;
   border-radius: 4px;
   font-size: 18px;
   font-weight: 500;
@@ -122,7 +122,7 @@ p {
 
 .btn-branding-outline:focus,
 .btn-branding-outline:hover {
-  color: var(--third-color) !important;
+  color: #333 !important;
   transition: all 100ms ease-in-out !important;
 }
 
@@ -214,8 +214,7 @@ footer .social-links a:hover {
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 56px;
-    line-height: 42px;
+    line-height: 1.5;
   }
 
   h2 {
@@ -223,7 +222,11 @@ footer .social-links a:hover {
   }
 
   h3 {
-    font-size: 44 px;
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 80px 20px;
   }
 
   .content {
@@ -236,7 +239,7 @@ footer .social-links a:hover {
     text-align: center;
   }
 
-  nav a {
-    font-size: 12px;
+  footer .email-link {
+    font-size: 16px;
   }
 }
