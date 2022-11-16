@@ -155,16 +155,16 @@ nav a {
 
 nav li .active,
 nav a:hover {
-  color: var(--secondary-color);
+  color: var(--branding-color);
 }
 
 .contact a {
-  color: #999;
+  color: var(--body-color);
 }
 
 .contact a:focus,
 .contact a:hover {
-  color: var(--body-color);
+  color: var(--secondary-color);
 }
 
 footer {
