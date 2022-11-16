@@ -76,15 +76,6 @@ p {
   margin: 30px;
 }
 
-.content a {
-  color: var(--secondary-color);
-}
-
-.content a:focus,
-.content a:hover {
-  color: var(--body-color);
-}
-
 .content h1 {
   font-size: 64px;
   line-height: 80px;
@@ -164,7 +155,16 @@ nav a {
 
 nav li .active,
 nav a:hover {
-  color: var(--branding-color);
+  color: var(--secondary-color);
+}
+
+.contact a {
+  color: #999;
+}
+
+.contact a:focus,
+.contact a:hover {
+  color: var(--body-color);
 }
 
 footer {
