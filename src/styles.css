@@ -78,7 +78,6 @@ p {
 
 .content h1 {
   font-size: 64px;
-  line-height: 80px;
 }
 
 .content h2 {
@@ -212,8 +211,6 @@ footer .social-links a:hover {
   h1,
   .content h1 {
     font-size: 44px;
-    line-height: 1;
-    margin: 10px 0 10px;
   }
 
   h2 {
