@@ -60,12 +60,25 @@ p {
   margin: 0;
 }
 
-.hero h2 {
+.hero h1 {
   color: var(--body-color);
   font-family: var(--default-font-family);
   font-size: 24px;
   font-weight: normal;
   line-height: 1.5;
+}
+
+.hero h2 {
+  color: var(--headings-color);
+  font-size: 96px;
+  line-height: 1.5;
+}
+
+h2.selected {
+  color: var(--body-color);
+  font-family: var(--default-font-family);
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .content-container {
@@ -83,6 +96,19 @@ p {
 .content h2 {
   font-family: var(--default-font-family);
   font-size: 24px;
+  line-height: 1.5;
+}
+
+h1.about {
+  font-family: var(--default-font-family);
+  color: var(--secondary-heading);
+  font-size: 24px;
+}
+
+h2.about {
+  font-family: var(--heading-font-family);
+  color: var(--headings-color);
+  font-size: 64px;
   line-height: 1.5;
 }
 
@@ -138,7 +164,7 @@ nav li {
 }
 
 nav a {
-  color: #333;
+  color: var(--body-color);
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
@@ -150,6 +176,7 @@ nav a:hover {
 
 .contact a {
   color: var(--body-color);
+  font-weight: 700;
 }
 
 .contact a:focus,
