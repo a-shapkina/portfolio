@@ -236,11 +236,13 @@ footer .social-links a:hover {
 
 @media (max-width: 900px) {
   h1,
-  .content h1 {
+  .content h1,
+  h1.about {
     font-size: 44px;
   }
 
-  h2 {
+  h2,
+  h2.about {
     font-size: 44px;
   }
 
