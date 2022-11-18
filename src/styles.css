@@ -237,7 +237,8 @@ footer .social-links a:hover {
 @media (max-width: 900px) {
   h1,
   h2,
-  h3 {
+  h3,
+  .hero h2, h2.about {
     font-size: 44px;
   }
 
